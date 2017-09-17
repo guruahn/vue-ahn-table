@@ -1,12 +1,12 @@
 {
   "name": "vue-ahn-table",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "complex header of table for VueJs",
   "main": "Table.vue",
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git://github.com:guruahn/vue-ahn-table.git"
+    "url": "git://github.com/guruahn/vue-ahn-table.git"
   },
   "keywords": [
     "VueJs",
