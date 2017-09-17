@@ -24,9 +24,48 @@ export default {
   name: 'hello',
   data() {
     return {
-      msg: 'Welcome to Just Another Vue.js App',
-      cities: ['Bengaluru', 'Delhi', 'Kolkata', 'Bareilly'],
-      city: '',
+      title: 'Basic Table',
+      tableData: {
+        header: [
+          [
+            { label: 'header1', isShow: true },
+            { label: 'header2', isShow: true },
+            { label: 'header3', isShow: true },
+            { label: 'header4', isShow: true },
+            { label: 'header5', isShow: true },
+          ],
+        ],
+        rows: [
+          [
+            { label: 'v-title1-1', type: 'header', rowspan: 0, isShow: true },
+            { label: 'v-title1-2', type: 'header', rowspan: 0, isShow: true },
+            { label: 'v-column1-1', type: 'column' },
+            { label: 'v-column1-2', type: 'column' },
+            { label: 'v-column1-3', type: 'column' },
+          ],
+          [
+            { label: 'v-title2-1', type: 'header', rowspan: 0, isShow: true },
+            { label: 'v-title2-2', type: 'header', rowspan: 0, isShow: true },
+            { label: 'v-column2-1', type: 'column' },
+            { label: 'v-column2-2', type: 'column' },
+            { label: 'v-column2-3', type: 'column' },
+          ],
+          [
+            { label: 'v-title3-1', type: 'header', rowspan: 0, isShow: true },
+            { label: 'v-title3-2', type: 'header', rowspan: 0, isShow: true },
+            { label: 'v-column3-1', type: 'column' },
+            { label: 'v-column3-2', type: 'column' },
+            { label: 'v-column3-3', type: 'column' },
+          ],
+          [
+            { label: 'v-title4-1', type: 'header', rowspan: 0, isShow: true },
+            { label: 'v-title4-2', type: 'header', rowspan: 0, isShow: true },
+            { label: 'v-column4-1', type: 'column' },
+            { label: 'v-column4-2', type: 'column' },
+            { label: 'v-column4-3', type: 'column' },
+          ],
+        ],
+      },
     };
   },
 };
@@ -36,21 +75,16 @@ export default {
 ```HTML
 <template>
   <div class="hello">    
-    <Dropdown :options="cities" v-model="city" placeholder="City" style="width: 30%"/>
+    <a-table
+     :propTableData="tableData"
+     :propTitle="title"></a-table>
   </div>
 </template>
 ```
 
 ## Example
 ---------------
-I have created an [example](https://github.com/mimani/vue-just-another-dropdown/tree/master/example) vue webapp (documentation [here](https://github.com/mimani/vue-just-another-dropdown/blob/master/example/just-another-vue-app/README.md)), demonstrating this dropdown via simple vue webapp, checkout `example` directory in this repo.
-
-
-## TODOs
----------------
-- Add support for multiselect
-- Provide options for customised style
-- Demo github pages
+I have created an [example](https://github.com/guruahn/vue-ahn-table/tree/master/example/demo-vue-ahn-table) vue webapp, demonstrating this table via simple vue webapp, checkout `example` directory in this repo.
 
 
 ## Contributions

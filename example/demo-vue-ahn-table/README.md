@@ -1,6 +1,6 @@
-# just-another-vue-app
+# vue-ahn-table Demo
 
-> Example application for just another dropdown
+> Example application for vue-ahn-table
 
 ## Build Setup
 

@@ -6,7 +6,7 @@
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git://github.com:guruahn/vue-ahn-table.git"
   },
   "keywords": [
     "VueJs",
@@ -16,9 +16,9 @@
   "author": "guruahn@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/guruahn/vue-ahn-table/issues"
   },
-  "homepage": "",
+  "homepage": "https://medium.com/@jeongwooahn",
   "devDependencies": {
     "sass-loader": "^6.0.6",
     "node-sass": "^4.5.3",
