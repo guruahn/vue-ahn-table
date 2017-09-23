@@ -1,28 +1,26 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <!-- <h2>which features just another dropdown</h2> -->
-    <!-- <ul>
-      <li><a href="https://www.npmjs.com/package/vue-just-another-dropdown" target="_blank">NPM Package</a></li>
-      <li><a href="https://github.com/mimani/vue-just-another-dropdown" target="_blank">Code</a></li>
-      <li><a href="http://stackoverflow.com/search?q=vue+just+another+dropdown" target="_blank">StackOverflow</a></li>
-      <br>
-    </ul> -->
     <a-table
-     :propTableData="tableData"
-     :propTitle="title"></a-table>
+     :propTableData="tableData1"
+     :propTitle="title1"></a-table>
      <a-table
      :propTableData="tableData2"
      :propTitle="title2"></a-table>
      <a-table
      :propTableData="tableData3"
      :propTitle="title3"></a-table>
+     <a-table
+     :propTableData="tableData1"
+     :propFilter="filter"
+     :propTitle="title4"></a-table>
   </div>
 </template>
 
 <script>
 import vue from 'vue';
-import aTable from './Table';
+//import aTable from 'vue-ahn-table';
+import aTable from './Table.vue';
 
 vue.component('aTable', aTable);
 
@@ -31,8 +29,8 @@ export default {
   data() {
     return {
       msg: 'Welcome to Vue-Ahn-Table Demo',
-      title: 'Basic Table',
-      tableData: {
+      title1: 'Basic Table',
+      tableData1: {
         header: [
           [
             { label: 'header1', isShow: true },
@@ -192,6 +190,10 @@ export default {
           ],
         ],
       },
+      title4: 'Filterd',
+      filter: function(column) {
+        return column + '(filterd)'
+      }
     };
   },
 };
@@ -201,6 +203,7 @@ export default {
 <style scoped>
 h1, h2 {
   font-weight: normal;
+  text-align: center;
 }
 
 ul {

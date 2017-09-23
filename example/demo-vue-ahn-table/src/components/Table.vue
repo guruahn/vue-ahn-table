@@ -22,7 +22,7 @@
             </th>
             <td
               v-if="column.type == 'column'">
-              {{column.label}}  
+              {{propFilter(column.label)}}  
             </td>
           </template>
         </tr>
@@ -46,6 +46,12 @@ export default {
       type: Object,
       require: true,
     },
+    propFilter: {
+      type: Function,
+      default: function (column) {
+        return column
+      }
+    }
   },
   data() {
     return {
