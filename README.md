@@ -1,10 +1,8 @@
-vue-ahn-table
-=============
+# vue-ahn-table
 
 Vue table template, which can have complex vertical header.
 
 ## Installation
----------------
 
 ### npm
 ``` sh
@@ -12,7 +10,7 @@ npm install --save vue-ahn-table
 ```
 
 ## Usage
----------------
+
 ```HTML
 <template>
   <div class="hello">    
@@ -83,9 +81,9 @@ export default {
 ```
 
 ## Example
----------------
+
 I have created an [example](https://github.com/guruahn/vue-ahn-table/tree/master/example/demo-vue-ahn-table) vue webapp, demonstrating this table via simple vue webapp, checkout `example` directory in this repo.
 
 ## Contributions
----------------
+
 All contributions are welcome: use-cases, documentation, code, patches, bug reports, feature requests, etc. You do not need to be a programmer to speak up!

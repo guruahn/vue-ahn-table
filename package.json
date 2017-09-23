@@ -1,6 +1,6 @@
 {
   "name": "vue-ahn-table",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "complex header of table for VueJs",
   "main": "Table.vue",
   "scripts": {},

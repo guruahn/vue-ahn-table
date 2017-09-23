@@ -19,8 +19,8 @@
 
 <script>
 import vue from 'vue';
-//import aTable from 'vue-ahn-table';
-import aTable from './Table.vue';
+import aTable from 'vue-ahn-table';
+//import aTable from './Table.vue';
 
 vue.component('aTable', aTable);
 
